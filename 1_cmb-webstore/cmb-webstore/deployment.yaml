@@ -16,9 +16,9 @@ spec:
     metadata:
       labels:
         app: cmb-webstore
-  spec:
-    containers:
-      - name: cmb-webstore
-        image: ressafri/nginx:1.29.3-alpine
-        ports:
-          - containerPort: 80
+    spec:
+      containers:
+        - name: cmb-webstore
+          image: ressafri/nginx:1.29.3-alpine
+          ports:
+            - containerPort: 80
