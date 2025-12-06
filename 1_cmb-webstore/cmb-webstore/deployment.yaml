@@ -6,16 +6,16 @@ metadata:
   namespace: cmb-production
 
   labels:
-    app: nginx
+    app: cmb-webstore
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: cmb-webstore
   template:
     metadata:
       labels:
-        app: nginx
+        app: cmb-webstore
   spec:
     containers:
       - name: cmb-webstore
