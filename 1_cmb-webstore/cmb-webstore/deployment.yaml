@@ -4,6 +4,7 @@ kind: Deployment
 metadata:
   name: cmb-webstore
   namespace: cmb-production
+
   labels:
     app: cmb-webstore
 spec:
@@ -11,6 +12,10 @@ spec:
   selector:
     matchLabels:
       app: cmb-webstore
+  template:
+    metadata:
+      labels:
+        app: cmb-webstore
   spec:
     containers:
       - name: cmb-webstore
