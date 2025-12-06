@@ -10,7 +10,7 @@ spec:
     # repoURL: https://github.com/ressafri/cmb-k8s.git
     repoURL: https://github.com/ressafri/test-delete-me.git
     targetRevision: HEAD
-    path: cmb-webstore
+    path: 1_cmb-webstore/cmb-webstore
   destination:
     server: https://kubernetes.default.svc
     # namespace: default
