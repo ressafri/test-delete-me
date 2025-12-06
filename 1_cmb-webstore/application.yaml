@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     # repoURL: https://github.com/ressafri/cmb-k8s.git
-    repoURL: https://github.com/anonputra/lesson-158.git
+    repoURL: https://github.com/ressafri/test-delete-me.git
     targetRevision: HEAD
     path: cmb-webstore
   destination:
