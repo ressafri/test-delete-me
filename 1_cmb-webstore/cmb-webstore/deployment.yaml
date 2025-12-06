@@ -4,21 +4,16 @@ kind: Deployment
 metadata:
   name: cmb-webstore
   namespace: cmb-production
-
   labels:
-    app: nginx
+    app: cmb-webstore
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:1.14.2
+      app: cmb-webstore
+  spec:
+    containers:
+      - name: cmb-webstore
+        image: ressafri/nginx:1.29.3-alpine
         ports:
-        - containerPort: 80
+          - containerPort: 80
