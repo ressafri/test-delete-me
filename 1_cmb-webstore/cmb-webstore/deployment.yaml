@@ -2,18 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cmb-webstore
-  namespace: cmb-production
+  name: nginx-deployment
   labels:
-    app: cmb-webstore
+    app: nginx
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: cmb-webstore
-  spec:
-    containers:
-      - name: cmb-webstore
-        image: ressafri/nginx:1.29.3-alpine
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
         ports:
-          - containerPort: 80
+        - containerPort: 80
