@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: cmb-webstore
-          image: ressafri/nginx:v0.1.0
+          image: ressafri/web_server
           ports:
             - containerPort: 80
