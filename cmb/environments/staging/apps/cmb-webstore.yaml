@@ -8,13 +8,13 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-    source:
-      repoURL: https://github.com/ressafri/test-delete-me.git
-      targetRevision: HEAD
-      path: cmb/environments/staging/cmb-webstore
-    destination:
-      server: https://kubernetes.default.svc
-    syncPolicy:
+  source:
+    repoURL: https://github.com/ressafri/test-delete-me.git
+    targetRevision: HEAD
+    path: cmb/environments/staging/cmb-webstore
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
       automated:
         prune: true
         selfHeal: true
