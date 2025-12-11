@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cmb-webstore
-  namespace: cmb-production
+  namespace: foo
 
   labels:
     app: cmb-webstore

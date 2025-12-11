@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cmb-webstore
+  namespace: var
+
+  labels:
+    app: cmb-webstore
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cmb-webstore
+  template:
+    metadata:
+      labels:
+        app: cmb-webstore
+    spec:
+      containers:
+        - name: cmb-webstore
+          image: nginx:1.29.4-alpine
+          ports:
+            - containerPort: 80
