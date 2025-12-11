@@ -11,7 +11,7 @@ spec:
     source:
       repoURL: https://github.com/ressafri/test-delete-me.git
       targetRevision: HEAD
-      path: environments/staging/cmb-webstore
+      path: cmb/environments/staging/cmb-webstore
     destination:
       server: https://kubernetes.default.svc
     syncPolicy:
