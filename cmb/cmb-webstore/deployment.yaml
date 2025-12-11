@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: cmb-webstore
-          image: nginx:latest
+          image: nginx:1.29.4-alpine
           ports:
             - containerPort: 80
