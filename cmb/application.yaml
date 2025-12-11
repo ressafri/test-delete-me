@@ -15,7 +15,6 @@ spec:
     path: cmb/environments/staging/apps
   destination:
     server: https://kubernetes.default.svc
-    # namespace: default
   syncPolicy:
     automated:
       prune: true

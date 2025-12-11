@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cmb-webstore-foo
+  name: cmb-webstore
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io

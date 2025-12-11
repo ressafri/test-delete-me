@@ -2,23 +2,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cmb-webstore
-  namespace: foo
+  name: cmb-portfolio
+  namespace: cmb-staging
 
   labels:
-    app: cmb-webstore
+    app: cmb-portfolio
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: cmb-webstore
+      app: cmb-portfolio
   template:
     metadata:
       labels:
-        app: cmb-webstore
+        app: cmb-portfolio
     spec:
       containers:
-        - name: cmb-webstore
+        - name: cmb-portfolio
           image: nginx:1.28.0-alpine
           ports:
             - containerPort: 80
