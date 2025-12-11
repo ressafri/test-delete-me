@@ -17,7 +17,7 @@ echo "Using temporary directory: $tmp_dir"
 git clone https://github.com/ressafri/test-delete-me.git $tmp_dir
 
 # Update image tag in deployment.yaml
-sed -i '' "s|image: nginx:.*|image: nginx:$new_version|g" $tmp_dir/cmb/cmb-webstore/deployment.yaml
+sed -i '' "s|image: nginx:.*|image: nginx:$new_version|g" $tmp_dir/cmb/environments/staging/cmb-webstore/deployment.yaml
 
 
 cd $tmp_dir/cmb

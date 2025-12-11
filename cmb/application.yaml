@@ -12,7 +12,7 @@ spec:
     # repoURL: https://github.com/ressafri/cmb-k8s.git
     repoURL: https://github.com/ressafri/test-delete-me.git
     targetRevision: HEAD
-    path: environments/staging/apps
+    path: cmb/environments/staging/apps
   destination:
     server: https://kubernetes.default.svc
     # namespace: default
