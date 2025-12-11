@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cmb-feed
+  namespace: cmb-staging
+
+  labels:
+    app: cmb-feed
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cmb-feed
+  template:
+    metadata:
+      labels:
+        app: cmb-feed
+    spec:
+      containers:
+        - name: cmb-feed
+          image: nginx:1.29.4-alpine
+          ports:
+            - containerPort: 80

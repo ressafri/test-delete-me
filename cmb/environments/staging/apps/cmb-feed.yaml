@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ressafri/test-delete-me-private.git
+    repoURL: git@github.com:ressafri/test-delete-me-private.git
     targetRevision: HEAD
     path: cmb/environments/staging/cmb-feed
   destination:
