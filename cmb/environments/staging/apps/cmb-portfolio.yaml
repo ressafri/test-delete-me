@@ -6,8 +6,8 @@ metadata:
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-  spec:
-    project: default
+spec:
+  project: default
     source:
       repoURL: https://github.com/ressafri/test-delete-me.git
       targetRevision: HEAD
